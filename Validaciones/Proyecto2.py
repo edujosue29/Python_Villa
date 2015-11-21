@@ -4,7 +4,14 @@ import Validaciones as va
 
 
 #Lista para guardar los valores que lee del .CSV
-List = []  
+List = []
+ListIDs = []
+ListXins = []
+ListYins = []
+ListXouts = []
+ListYouts = []
+ListTimes = []
+ListSpeed= []
 
 #Numero de campos requeridos de la lista
 Campos = 7 
@@ -51,16 +58,27 @@ def main():
         count = 0
         length = len(List)
         while (count != length):
+
          avion = List[count]
-         
+
+         ListIDs.append(avion[0])
+         ListXins.append(avion[1])
+         ListYins.append(avion[2])
+         ListXouts.append(avion[3])
+         ListYouts.append(avion[4])
+         ListTimes.append(avion[5])
+         ListSpeed.append(avion[6])
+
          #Si pasa
          if(check_campo(avion)):
-         
-            print ('--El Avion: ' + avion[0] + ' Fue Permitido\n Coordenadas Entrada (' + avion[1] + ','+ avion[2] +')' +
-                                     '\n Coordenadas Salida (' + avion[3] + ','+ avion[4] +')' +
-                                      '\n MinutoEntrada (' + avion[5] + ')'+
-                                       '\n Velocidad (' + avion[6] + ')'     
-                )  
+            print()
+          #  print ('--El Avion: ' + avion[0] + ' Fue Permitido\n Coordenadas Entrada (' + avion[1] + ','+ avion[2] +')' +
+           #                          '\n Coordenadas Salida (' + avion[3] + ','+ avion[4] +')' +
+            #                          '\n MinutoEntrada (' + avion[5] + ')'+
+             #                          '\n Velocidad (' + avion[6] + ')'
+           #     )
+
+
          else:
           
             print ('--El Avion: ' + avion[0] + ' No puede ingresar a la zona') 
@@ -69,7 +87,11 @@ def main():
          count = count + 1
 
         #print ("Encontrados: " ,  length)  
-    
+    print('XXXXXXXXXXXXXXXXXXXXXX')
+    print('AllIDs' ,ListIDs)
+    print('AllXins' , ListXins)
+    print('AllYins' , ListYins)
+
 
 #llamada a funcion principal
 main()    
