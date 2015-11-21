@@ -56,10 +56,11 @@ def main():
          #Si pasa
          if(check_campo(avion)):
          
-            print ('--El Avion: ' + avion[0] + ' Fue Permitido\n Coordenadas Entrada (' + avion[1] + ','+ avion[2] +')' +
-                                     '\n Coordenadas Salida (' + avion[3] + ','+ avion[4] +')' +
-                                      '\n MinutoEntrada (' + avion[5] + ')'+
-                                       '\n Velocidad (' + avion[6] + ')'     
+            print ('--El Avion: ' + avion[0] + ' Fue Permitido' +
+                                     '\n Coordenadas Entrada (' + avion[1] + ','+ avion[2] +')' +
+                                     '\n Coordenadas Salida  (' + avion[3] + ','+ avion[4] +')' +
+                                     '\n MinutoEntrada       (' + avion[5] + ')'+
+                                     '\n Velocidad           (' + avion[6] + ')'
                 )  
          else:
           
