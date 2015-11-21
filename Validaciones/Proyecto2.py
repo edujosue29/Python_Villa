@@ -1,6 +1,6 @@
 import csv
 import Validaciones as va
-
+import Colision as col
 
 
 #Lista para guardar los valores que lee del .CSV
@@ -86,12 +86,9 @@ def main():
         
          count = count + 1
 
-        #print ("Encontrados: " ,  length)  
-    print('XXXXXXXXXXXXXXXXXXXXXX')
-    print('AllIDs' ,ListIDs)
-    print('AllXins' , ListXins)
-    print('AllYins' , ListYins)
 
+    elimina = col.colisiones(ListIDs,ListXins,ListYins,ListXouts,ListYouts,ListTimes,ListSpeed)
+    print (elimina)
 
 #llamada a funcion principal
 main()    
