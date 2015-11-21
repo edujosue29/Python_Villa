@@ -5,12 +5,15 @@ punto_entrada = 25
 
 #Validaciones para punto de entrada
 def validation(campo):
-    if( (int(campo)%punto_entrada==0) and  
-        (int(campo)>=rango_min) and 
-       ( int(campo)<=rango_max )):
-        return True
+    if campo.isnumeric() :
+        if( (int(campo)%punto_entrada==0) and
+            (int(campo)>=rango_min) and
+           ( int(campo)<=rango_max )):
+            return True
+        else :
+          return False
     else :
-      return False
+          return False
   
 #Validaciones para el tiempo 
 def validation_time(campo):
