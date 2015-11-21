@@ -17,7 +17,7 @@ def colisiones(Id,Xin,Yin,Xout,Yout,Hora,Velocidad):
             B1=Yin[i]-(M1*Xin[i])
             B2=Yin[j]-(M2*Xin[j])
             #misma trayectoria
-            if((M1==M2) and (B1==B2)):
+            if ((M1==M2) or ((M1==M2) and (B1==B2))):
                 #Mensaje misma trayectoria
                 T1=Hora[i]
                 T2=Hora[j]

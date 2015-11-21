@@ -1,6 +1,6 @@
 #Variables de rango
 rango_min = -125
-rango_max = 125
+rango_max = 300
 punto_entrada = 25 
 
 #Validaciones para punto de entrada
